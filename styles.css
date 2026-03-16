@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif
+  }
+  
+  /* Header (<header>) */
+  header {
+    background-color: #f9e2c8;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-bottom: 2px solid #e4b48c;
+  }
+  
+  /* Navigation Bar (<div>) */
+  .navbar {
+    background-color: #fff3e0;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom: 2px solid #e4b48c;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: brown;
+    background-color: #f28c8c;
+    font-weight: bold;
+    margin: 0 10px;
+    padding: 8px 14px;
+    border-radius: 12px;
+  }
+  
+  /* Main Content (<main>) */
+  main {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+  }
+  
+  .main-container {
+    width: 100%;
+    max-width: 1100px;
+  }
+  
+  /* Sections */
+  .main-container section {
+    background-color: #fff8ee;
+    border-radius: 25px;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  }
+  
+  .main-container section h2 {
+    text-align: center;
+  }
+  
+  /* Featured section: center bulleted list (bullets + text) */
+  .featured {
+    text-align: center; /* centers the UL block */
+  }
+  
+  .featured ul {
+    display: inline-block;       /* shrink-wrap so it can be centered */
+    text-align: left;            /* keep bullet list readable */
+    list-style-position: inside; /* bullets move with the text block */
+    padding-left: 0;             /* remove default indent */
+    margin: 0 auto;              /* ensure centered */
+  }
+  
+  /* Footer (<footer>) */
+  footer {
+    background-color: #f9e2c8;
+    text-align: center;
+    padding: 15px;
+    border-top: 2px solid #e4b48c;
+  }
+
+  .login-main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .login-form {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  /* Optional: center the input boxes themselves */
+  .login-form input[type="text"],
+  .login-form input[type="password"] {
+    display: block;
+    margin: 0 auto;
+    background-color: #fff8ee;
+  }
+
+.promo-select{
+  background: #fff8ee;
+  border-radius: 10px;
+  padding: 6px 10px;
+  border: 1px solid #e4b48c;
+}
+
+/* Tile grid */
+.tiles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.tile {
+  width: 240px;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 15px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.tile-img {
+  width: 200px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 10px;
+}
+
+.tile-link {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  color: brown;
+  background-color: #f28c8c;
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+
+/* Buttons */
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.btn{
+  background-color: #f28c8c;
+  color: white;              /* <- change from brown to white */
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 8px 14px;         /* <- match spec */
+  cursor: pointer;
+  border: none;                 /* <- remove default border */
+}
+
+.btn-remove{
+  background-color: #c94c4c;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 8px 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid brown;
+}
+
+.btn-wide {
+  width: 220px;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  max-width: 900px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Order summary table */
+.summary-table {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto 0;
+  border-collapse: collapse;
+  background: #fff8ee;
+}
+
+.summary-table th,
+.summary-table td {
+  border: 1px solid black;
+  padding: 12px;
+  text-align: left;
+}
+
+.summary-table th {
+  width: 160px;
+}
+
+  

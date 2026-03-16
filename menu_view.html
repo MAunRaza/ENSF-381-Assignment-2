@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu View</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.jpeg">
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpeg" alt="Sweet Scoops Logo" width="60" height="60" />
+    <h1>Sweet Scoops Ice Cream</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+  </div>
+
+  <main>
+    <div class="main-container">
+
+      <section>
+        <h2>Menu View</h2>
+        <p>Select a promotion/season:</p>
+
+        <label for="promo"><strong>Promotion:</strong></label>
+        <select id="promo" name="promo" class="promo-select">
+          <option>Winter Warmers (2025)</option>
+          <option>Spring Bloom (2025)</option>
+          <option>Summer Splash (2024)</option>
+          <option>Fall Harvest (2024)</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Available Flavors</h2>
+
+        <div class="tiles">
+          <div class="tile">
+            <img class="tile-img" src="Picture2.jpeg" alt="Ice cream cones" />
+            <h3>Vanilla Dream</h3>
+            <p><strong>Category:</strong> Classic</p>
+            <p>Smooth vanilla bean with a creamy finish.</p>
+            <p><strong>Price:</strong> $4–$7</p>
+            <p><strong>Dietary:</strong> Vegetarian • Gluten-Free</p>
+            <a class="tile-link" href="customize_order.html">Customize this order</a>
+          </div>
+
+          <div class="tile">
+            <img class="tile-img" src="Picture1.webp" alt="Chocolate sundae" />
+            <h3>Chocolate Bliss</h3>
+            <p><strong>Category:</strong> Chocolate</p>
+            <p>Rich cocoa base with a fudgy flavor.</p>
+            <p><strong>Price:</strong> $5–$8</p>
+            <p><strong>Dietary:</strong> Vegetarian</p>
+            <a class="tile-link" href="customize_order.html">Customize this order</a>
+          </div>
+
+          <div class="tile">
+            <img class="tile-img" src="Picture2.jpeg" alt="Chocolate sundae" />
+            <h3>Strawberry Swirl</h3>
+            <p><strong>Category:</strong> Strawberry</p>
+            <p>Yummy strawberry base with a sweet taste.</p>
+            <p><strong>Price:</strong> $4–$8</p>
+            <p><strong>Dietary:</strong> Vegetarian • Gluten-Free</p>
+            <a class="tile-link" href="customize_order.html">Customize this order</a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Seasonal Specials</h2>
+
+        <div class="tiles">
+          <div class="tile">
+            <img class="tile-img" src="Picture2.jpeg" alt="Seasonal special" />
+            <h3>Berry Frost</h3>
+            <p><strong>Price:</strong> $6</p>
+            <div class="btn-row">
+              <button type="button" class="btn">Add</button>
+              <button type="button" class="btn btn-remove">Remove</button>
+            </div>
+          </div>
+
+          <div class="tile">
+            <img class="tile-img" src="Picture2.jpeg" alt="Seasonal special" />
+            <h3>Mint Choco Chill</h3>
+            <p><strong>Price:</strong> $6</p>
+            <div class="btn-row">
+              <button type="button" class="btn">Add</button>
+              <button type="button" class="btn btn-remove">Remove</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

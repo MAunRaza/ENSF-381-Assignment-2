@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customize Order</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.jpeg">
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpeg" alt="Sweet Scoops Logo" width="60" height="60" />
+    <h1>Sweet Scoops Ice Cream</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="menu_view.html">Menu</a>
+    <a href="customize_order.html">Customize</a>
+    <a href="order_summary.html">Order Summary</a>
+  </div>
+
+  <main>
+    <div class="main-container">
+
+      <section>
+        <h2>Customize Your Order</h2>
+        <img class="banner" src="Picture2.jpeg" alt="Ice cream banner" />
+      </section>
+
+      <section>
+        <h2>Order 1: Vanilla Dream</h2>
+        <p>Choose a serving type:</p>
+
+        <form action="#">
+          <label><input type="radio" name="vanilla_type" value="cup" /> Cup</label><br />
+          <label><input type="radio" name="vanilla_type" value="cone" /> Cone</label><br /><br />
+          <button type="button" class="btn">Submit Selection</button>
+        </form>
+      </section>
+
+      <section>
+        <h2>Order 2: Chocolate Bliss</h2>
+        <p>Select toppings:</p>
+
+        <form action="#">
+          <label><input type="checkbox" name="toppings" value="sprinkles" /> Sprinkles</label><br />
+          <label><input type="checkbox" name="toppings" value="nuts" /> Nuts</label><br />
+          <label><input type="checkbox" name="toppings" value="caramel" /> Caramel Drizzle</label><br />
+          <label><input type="checkbox" name="toppings" value="cookie" /> Cookie Crumble</label><br /><br />
+          <button type="button" class="btn">Submit Selection</button>
+        </form>
+      </section>
+
+      <section class="center">
+        <a class="btn btn-wide" href="order_summary.html">Finish Order</a>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
