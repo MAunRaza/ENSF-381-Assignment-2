@@ -26,35 +26,36 @@
 
       <section>
         <h2>Customize Your Order</h2>
+
+        <!-- Banner image (still allowed) -->
         <img class="banner" src="Picture2.jpeg" alt="Ice cream banner" />
+
+        <!-- ✅ Timer at the top of main content -->
+        <p class="timer">
+          Time left: <span id="timer">10:00</span>
+        </p>
       </section>
 
       <section>
-        <h2>Order 1: Vanilla Dream</h2>
-        <p>Choose a serving type:</p>
+        <form id="orderForm">
+          <h2>Choose a base flavor:</h2>
+          <label><input type="radio" name="baseFlavor" value="Vanilla Dream"> Vanilla Dream</label><br />
+          <label><input type="radio" name="baseFlavor" value="Chocolate Bliss"> Chocolate Bliss</label><br />
+          <label><input type="radio" name="baseFlavor" value="Strawberry Swirl"> Strawberry Swirl</label><br /><br />
 
-        <form action="#">
-          <label><input type="radio" name="vanilla_type" value="cup" /> Cup</label><br />
-          <label><input type="radio" name="vanilla_type" value="cone" /> Cone</label><br /><br />
-          <button type="button" class="btn">Submit Selection</button>
+          <h2>Select toppings ($1.50 each):</h2>
+          <label><input type="checkbox" name="toppings" value="Sprinkles"> Sprinkles</label><br />
+          <label><input type="checkbox" name="toppings" value="Nuts"> Nuts</label><br />
+          <label><input type="checkbox" name="toppings" value="Caramel Drizzle"> Caramel Drizzle</label><br />
+          <label><input type="checkbox" name="toppings" value="Cookie Crumble"> Cookie Crumble</label><br /><br />
+
+          <!-- ✅ Total price right before Finish Order button -->
+          <p class="total">
+            Total Price: <span id="totalPrice">$0.00</span>
+          </p>
+
+          <button type="submit" class="btn btn-wide">Finish Order</button>
         </form>
-      </section>
-
-      <section>
-        <h2>Order 2: Chocolate Bliss</h2>
-        <p>Select toppings:</p>
-
-        <form action="#">
-          <label><input type="checkbox" name="toppings" value="sprinkles" /> Sprinkles</label><br />
-          <label><input type="checkbox" name="toppings" value="nuts" /> Nuts</label><br />
-          <label><input type="checkbox" name="toppings" value="caramel" /> Caramel Drizzle</label><br />
-          <label><input type="checkbox" name="toppings" value="cookie" /> Cookie Crumble</label><br /><br />
-          <button type="button" class="btn">Submit Selection</button>
-        </form>
-      </section>
-
-      <section class="center">
-        <a class="btn btn-wide" href="order_summary.html">Finish Order</a>
       </section>
 
     </div>
@@ -64,5 +65,6 @@
     <p>© 2026 Sweet Scoops Ice Cream. All rights reserved.</p>
   </footer>
 
+  <script src="customize.js"></script>
 </body>
 </html>
