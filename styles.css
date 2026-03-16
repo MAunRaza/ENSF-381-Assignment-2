@@ -215,4 +215,56 @@ body {
   width: 160px;
 }
 
+/* assignment 2  */
+
+/* Hover highlight (tile background changes on hover) */
+.tile {
+  background: #fff8ee;
+}
+.tile:hover {
+  background: #ffffff;
+}
+
+/* Cart rows (name left, total right) */
+.cart-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 6px;
+  border-bottom: 1px solid #e4b48c;
+}
+
+/* Login dynamic message box (must be outside the form) */
+.message-box {
+  display: none;
+  margin: 12px auto 0;
+  max-width: 420px;
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.message-box.success {
+  background: #d4edda;
+  color: #155724;
+  border: 2px solid #c3e6cb;
+}
+
+.message-box.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 2px solid #f5c6cb;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Timer + total display */
+.timer, .total {
+  font-weight: bold;
+  text-align: center;
+}
+
   
