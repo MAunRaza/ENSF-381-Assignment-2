@@ -1,105 +1,233 @@
 body {
-    margin: 0;
-    font-family: 'Times New Roman', Times, serif
-  }
-  
-  /* Header (<header>) */
-  header {
-    background-color: #f9e2c8;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 15px 30px;
-    border-bottom: 2px solid #e4b48c;
-  }
-  
-  /* Navigation Bar (<div>) */
-  .navbar {
-    background-color: #fff3e0;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    border-bottom: 2px solid #e4b48c;
-  }
-  
-  .navbar a {
-    text-decoration: none;
-    color: brown;
-    background-color: #f28c8c;
-    font-weight: bold;
-    margin: 0 10px;
-    padding: 8px 14px;
-    border-radius: 12px;
-  }
-  
-  /* Main Content (<main>) */
-  main {
-    display: flex;
-    justify-content: center;
-    padding: 25px;
-  }
-  
-  .main-container {
-    width: 100%;
-    max-width: 1100px;
-  }
-  
-  /* Sections */
-  .main-container section {
-    background-color: #fff8ee;
-    border-radius: 25px;
-    padding: 25px;
-    margin-bottom: 40px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  }
-  
-  .main-container section h2 {
-    text-align: center;
-  }
-  
-  /* Featured section: center bulleted list (bullets + text) */
-  .featured {
-    text-align: center; /* centers the UL block */
-  }
-  
-  .featured ul {
-    display: inline-block;       /* shrink-wrap so it can be centered */
-    text-align: left;            /* keep bullet list readable */
-    list-style-position: inside; /* bullets move with the text block */
-    padding-left: 0;             /* remove default indent */
-    margin: 0 auto;              /* ensure centered */
-  }
-  
-  /* Footer (<footer>) */
-  footer {
-    background-color: #f9e2c8;
-    text-align: center;
-    padding: 15px;
-    border-top: 2px solid #e4b48c;
-  }
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
 
-  .login-main {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-  }
-  
-  .login-form {
-    text-align: center;
-    margin-bottom: 70px;
-  }
-  
-  /* Optional: center the input boxes themselves */
-  .login-form input[type="text"],
-  .login-form input[type="password"] {
-    display: block;
-    margin: 0 auto;
-    background-color: #fff8ee;
-  }
+/* Header */
+header {
+  background-color: #f9e2c8;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  border-bottom: 2px solid #e4b48c;
+}
 
-.promo-select{
+/* Navigation Bar */
+.navbar {
+  background-color: #fff3e0;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-bottom: 2px solid #e4b48c;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: brown;
+  background-color: #f28c8c;
+  font-weight: bold;
+  margin: 0 10px;
+  padding: 8px 14px;
+  border-radius: 12px;
+}
+
+/* Main Content */
+main {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+/* Sections */
+.main-container section {
+  background-color: #fff8ee;
+  border-radius: 25px;
+  padding: 25px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.main-container section h2 {
+  text-align: center;
+}
+
+/* Featured */
+.featured {
+  text-align: center;
+}
+
+.featured ul {
+  display: inline-block;
+  text-align: left;
+  list-style-position: inside;
+  padding-left: 0;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #f9e2c8;
+  text-align: center;
+  padding: 15px;
+  border-top: 2px solid #e4b48c;
+}
+
+/* Login / Signup page background */
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 20px;
+  min-height: 430px;
+  background-color: #b7d9ea;
+  border-top: 2px solid #e4b48c;
+  border-bottom: 2px solid #e4b48c;
+}
+
+.login-main .main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Login / Signup card */
+.login-form {
+  text-align: center;
+  margin-bottom: 15px;
+  background-color: #f7f1e7;
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  width: 270px;
+}
+
+.signup-form {
+  width: 320px;
+}
+
+.login-form p {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #5c4033;
+}
+
+.login-form label {
+  color: #5c4033;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.checkbox-label {
+  font-weight: normal;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  display: block;
+  margin: 0 auto;
+  background-color: #fff8ee;
+  border: 1px solid #e4b48c;
+  border-radius: 6px;
+  padding: 8px 10px;
+  width: 120px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"] {
+  width: 220px;
+}
+
+.login-form input[type="checkbox"] {
+  accent-color: #f28c8c;
+}
+
+/* Login button */
+.login-form button {
+  background-color: #f28c8c;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  opacity: 0.9;
+}
+
+/* Signup button - required styling */
+.signup-btn {
+  background-color: #4CAF50 !important;
+  color: white;
+  padding: 10px;
+  border-radius: 5px !important;
+  margin: 10px;
+  opacity: 0.5;
+}
+
+.signup-btn:hover {
+  background-color: #45A049 !important;
+  opacity: 1.0;
+}
+
+/* Message box */
+.message-box {
+  display: none;
+  width: 100%;
+  max-width: 420px;
+  margin: 0 auto 12px auto;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.message-box.success {
+  background-color: #dff6dd;
+  color: #1f5c2e;
+  border: 1px solid #9ed39f;
+}
+
+.message-box.error {
+  background-color: #ffe0e0;
+  color: #8a1f1f;
+  border: 1px solid #e4a3a3;
+}
+
+/* Signup/Login links under form */
+.signup-text {
+  text-align: center;
+  margin-top: 6px;
+  color: #5c4033;
+  font-size: 15px;
+}
+
+.signup-link-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  background-color: #f28c8c;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 12px;
+  margin-left: 6px;
+}
+
+.signup-link-btn:hover {
+  opacity: 0.9;
+}
+
+.promo-select {
   background: #fff8ee;
   border-radius: 10px;
   padding: 6px 10px;
@@ -150,17 +278,17 @@ body {
   margin-top: 15px;
 }
 
-.btn{
+.btn {
   background-color: #f28c8c;
-  color: white;              /* <- change from brown to white */
+  color: white;
   font-weight: bold;
   border-radius: 12px;
-  padding: 8px 14px;         /* <- match spec */
+  padding: 8px 14px;
   cursor: pointer;
-  border: none;                 /* <- remove default border */
+  border: none;
 }
 
-.btn-remove{
+.btn-remove {
   background-color: #c94c4c;
   color: white;
   font-weight: bold;
@@ -213,58 +341,6 @@ body {
 
 .summary-table th {
   width: 160px;
-}
-
-/* assignment 2  */
-
-/* Hover highlight (tile background changes on hover) */
-.tile {
-  background: #fff8ee;
-}
-.tile:hover {
-  background: #ffffff;
-}
-
-/* Cart rows (name left, total right) */
-.cart-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 8px 6px;
-  border-bottom: 1px solid #e4b48c;
-}
-
-/* Login dynamic message box (must be outside the form) */
-.message-box {
-  display: none;
-  margin: 12px auto 0;
-  max-width: 420px;
-  padding: 12px;
-  border-radius: 10px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.message-box.success {
-  background: #d4edda;
-  color: #155724;
-  border: 2px solid #c3e6cb;
-}
-
-.message-box.error {
-  background: #f8d7da;
-  color: #721c24;
-  border: 2px solid #f5c6cb;
-}
-
-.signup-link {
-  text-align: center;
-  margin-top: 10px;
-}
-
-/* Timer + total display */
-.timer, .total {
-  font-weight: bold;
-  text-align: center;
 }
 
   

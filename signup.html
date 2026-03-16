@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Scoops Ice Cream - Signup</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="logo.jpeg" />
+</head>
+
+<body>
+  <header>
+    <img src="logo.jpeg" alt="Sweet Scoops Ice Cream logo" width="50" height="50" />
+    <h1>Sweet Scoops Ice Cream</h1>
+  </header>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <main class="login-main">
+    <div class="main-container">
+      <form class="login-form signup-form" id="signupForm">
+        <p>Create Account</p>
+
+        <label for="signupUsername">Username</label>
+        <br />
+        <input type="text" id="signupUsername" name="signupUsername" />
+        <br /><br />
+
+        <label for="signupPassword">Password</label>
+        <br />
+        <input type="password" id="signupPassword" name="signupPassword" />
+        <br /><br />
+
+        <label for="confirmPassword">Confirm Password</label>
+        <br />
+        <input type="password" id="confirmPassword" name="confirmPassword" />
+        <br /><br />
+
+        <label for="signupEmail">Email</label>
+        <br />
+        <input type="text" id="signupEmail" name="signupEmail" />
+        <br /><br />
+
+        <button type="submit" class="signup-btn">Signup</button>
+      </form>
+
+      <div id="signupMessageBox" class="message-box"></div>
+
+      <p class="signup-text">
+        Already have an account?
+        <a href="login.html" class="signup-link-btn">Back to Login</a>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; Sweet Scoops Ice Cream 2026
+  </footer>
+
+  <script>
+    const signupForm = document.getElementById("signupForm");
+    const signupMessageBox = document.getElementById("signupMessageBox");
+
+    function showSignupMessage(message, type) {
+      signupMessageBox.textContent = message;
+      signupMessageBox.className = "message-box " + type;
+      signupMessageBox.style.display = "block";
+    }
+
+    function validateUsername(username) {
+      const usernamePattern = /^[A-Za-z][A-Za-z0-9_-]{2,19}$/;
+      return usernamePattern.test(username);
+    }
+
+    function validatePassword(password) {
+      const passwordPattern =
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=\+\[\]{}|;:'",.<>?/`~])[^\s]{8,}$/;
+      return passwordPattern.test(password);
+    }
+
+    function validateEmail(email) {
+      const emailPattern = /^[^\s@]+@[^\s@]+\.(com|net|io)$/i;
+      return emailPattern.test(email);
+    }
+
+    signupForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const username = document.getElementById("signupUsername").value.trim();
+      const password = document.getElementById("signupPassword").value;
+      const confirmPassword = document.getElementById("confirmPassword").value;
+      const email = document.getElementById("signupEmail").value.trim();
+
+      if (username === "" || password === "" || confirmPassword === "" || email === "") {
+        showSignupMessage("All fields are required.", "error");
+        return;
+      }
+
+      if (!validateUsername(username)) {
+        showSignupMessage(
+          "Username must be 3 to 20 characters, start with a letter, and contain only letters, numbers, hyphens, or underscores.",
+          "error"
+        );
+        return;
+      }
+
+      if (!validatePassword(password)) {
+        showSignupMessage(
+          "Password must be at least 8 characters and include uppercase, lowercase, number, and special character, with no spaces.",
+          "error"
+        );
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        showSignupMessage("Confirm password must match the password.", "error");
+        return;
+      }
+
+      if (!validateEmail(email)) {
+        showSignupMessage(
+          "Email must be valid, contain no spaces, and end with .com, .net, or .io.",
+          "error"
+        );
+        return;
+      }
+
+      showSignupMessage("Signup successful. Redirecting to login page...", "success");
+
+      setTimeout(function () {
+        window.location.href = "login.html";
+      }, 2000);
+    });
+  </script>
+</body>
+</html>
